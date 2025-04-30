@@ -13511,6 +13511,7 @@ li.has-dropdown:hover .submenu li a {
   width: 100%;
   bottom: 0;
   background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.58) 0%, hsla(0, 0%, 0%, 0.498) 3.4%, hsla(0, 0%, 0%, 0.424) 7%, hsla(0, 0%, 0%, 0.36) 10.7%, hsla(0, 0%, 0%, 0.303) 14.7%, hsla(0, 0%, 0%, 0.253) 19%, hsla(0, 0%, 0%, 0.21) 23.8%, hsla(0, 0%, 0%, 0.174) 29.1%, hsla(0, 0%, 0%, 0.143) 35%, hsla(0, 0%, 0%, 0.118) 41.6%, hsla(0, 0%, 0%, 0.098) 49%, hsla(0, 0%, 0%, 0.082) 57.2%, hsla(0, 0%, 0%, 0.07) 66.3%, hsla(0, 0%, 0%, 0.06) 76.4%, hsla(0, 0%, 0%, 0.054) 87.6%, hsla(0, 0%, 0%, 0.05) 100%);
+  background-image: linear-gradient(to bottom, hsla(211.11, 65.85%, 8.04%, 0.89) 0%, hsla(211.11, 65.85%, 8.04%, 0.761) 7%, hsla(211.11, 65.85%, 8.04%, 0.647) 12.8%, hsla(211.11, 65.85%, 8.04%, 0.547) 17.8%, hsla(211.11, 65.85%, 8.04%, 0.46) 22.2%, hsla(211.11, 65.85%, 8.04%, 0.386) 26.1%, hsla(211.11, 65.85%, 8.04%, 0.323) 30%, hsla(211.11, 65.85%, 8.04%, 0.271) 34%, hsla(211.11, 65.85%, 8.04%, 0.228) 38.4%, hsla(211.11, 65.85%, 8.04%, 0.194) 43.3%, hsla(211.11, 65.85%, 8.04%, 0.167) 49.2%, hsla(211.11, 65.85%, 8.04%, 0.148) 56.1%, hsla(211.11, 65.85%, 8.04%, 0.134) 64.4%, hsla(211.11, 65.85%, 8.04%, 0.126) 74.4%, hsla(211.11, 65.85%, 8.04%, 0.121) 86.1%, hsla(211.11, 65.85%, 8.04%, 0.12) 100%);
   z-index: 1;
 }
 .banner-four-area .banner-four-wrapper .inner-left {
@@ -13981,6 +13982,17 @@ li.has-dropdown:hover .submenu li a {
   right: 44px !important;
 }
 
+@media only screen and (max-width: 767px) {
+  .banner-four-area.home-page .overlay {
+    background-image: linear-gradient(to bottom, hsla(211.11, 65.85%, 8.04%, 0.89) 0%, hsla(211.11, 65.85%, 8.04%, 0.761) 7%, hsla(211.11, 65.85%, 8.04%, 0.647) 12.8%, hsla(211.11, 65.85%, 8.04%, 0.547) 17.8%, hsla(211.11, 65.85%, 8.04%, 0.46) 22.2%, hsla(211.11, 65.85%, 8.04%, 0.386) 26.1%, hsla(211.11, 65.85%, 8.04%, 0.323) 30%, hsla(211.11, 65.85%, 8.04%, 0.271) 34%, hsla(211.11, 65.85%, 8.04%, 0.228) 38.4%, hsla(211.11, 65.85%, 8.04%, 0.194) 43.3%, hsla(211.11, 65.85%, 8.04%, 0.167) 49.2%, hsla(211.11, 65.85%, 8.04%, 0.148) 56.1%, hsla(211.11, 65.85%, 8.04%, 0.134) 64.4%, hsla(211.11, 65.85%, 8.04%, 0.126) 74.4%, hsla(211.11, 65.85%, 8.04%, 0.121) 86.1%, hsla(211.11, 65.85%, 8.04%, 0.12) 100%);
+  }
+  .banner-four-area.lessons-banner .overlay {
+    background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.79) 0%, hsla(0, 0%, 0%, 0.697) 5.2%, hsla(0, 0%, 0%, 0.611) 9.6%, hsla(0, 0%, 0%, 0.533) 13.6%, hsla(0, 0%, 0%, 0.461) 17.2%, hsla(0, 0%, 0%, 0.396) 20.8%, hsla(0, 0%, 0%, 0.338) 24.5%, hsla(0, 0%, 0%, 0.287) 28.6%, hsla(0, 0%, 0%, 0.242) 33.3%, hsla(0, 0%, 0%, 0.204) 38.7%, hsla(0, 0%, 0%, 0.172) 45.2%, hsla(0, 0%, 0%, 0.145) 52.9%, hsla(0, 0%, 0%, 0.125) 62%, hsla(0, 0%, 0%, 0.111) 72.7%, hsla(0, 0%, 0%, 0.103) 85.3%, hsla(0, 0%, 0%, 0.1) 100%);
+  }
+  .banner-four-area.events-banner .overlay {
+    background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.79) 0%, hsla(0, 0%, 0%, 0.697) 5.2%, hsla(0, 0%, 0%, 0.611) 9.6%, hsla(0, 0%, 0%, 0.533) 13.6%, hsla(0, 0%, 0%, 0.461) 17.2%, hsla(0, 0%, 0%, 0.396) 20.8%, hsla(0, 0%, 0%, 0.338) 24.5%, hsla(0, 0%, 0%, 0.287) 28.6%, hsla(0, 0%, 0%, 0.242) 33.3%, hsla(0, 0%, 0%, 0.204) 38.7%, hsla(0, 0%, 0%, 0.172) 45.2%, hsla(0, 0%, 0%, 0.145) 52.9%, hsla(0, 0%, 0%, 0.125) 62%, hsla(0, 0%, 0%, 0.111) 72.7%, hsla(0, 0%, 0%, 0.103) 85.3%, hsla(0, 0%, 0%, 0.1) 100%);
+  }
+}
 .about-banner-area-bg {
   background-image: url(../images/about/01.webp);
   height: 750px !important;
@@ -17030,7 +17042,7 @@ section.cta.blonde .rts-cts-area {
 }
 @media (max-width: 768px) {
   .rts-footer-area {
-    padding-top: 10rem;
+    padding-top: 5rem;
   }
   .rts-footer-area .container {
     padding: 0 2rem 11rem 2rem;
@@ -18234,6 +18246,7 @@ section.cta.blonde .rts-cts-area {
   font-size: 16px;
   color: #6d6d6d;
   padding: 12px;
+  background-color: #fafafa;
 }
 .contact-form input:focus, .contact-form input:hover {
   border: 1px solid var(--color-primary);
@@ -18266,6 +18279,7 @@ section.cta.blonde .rts-cts-area {
   font-size: 16px;
   color: #6d6d6d;
   padding: 12px;
+  background-color: #fafafa;
 }
 .contact-form textarea:focus, .contact-form textarea:hover {
   border: 1px solid var(--color-primary);
@@ -20529,11 +20543,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(-4deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20548,11 +20562,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(-4deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
 }
 .slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
+  transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20586,11 +20600,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(4) {
   z-index: 7;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(-2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(4).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20605,28 +20619,9 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(5) {
   z-index: 6;
-  transform: rotate(-1deg) translate(-50%, -50%);
-}
-.slyde:nth-child(5).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.in-view {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.in-view:after {
-  background-color: transparent;
-}
-
-.slyde:nth-child(6) {
-  z-index: 5;
   transform: rotate(-3deg) translate(-50%, -50%);
 }
-.slyde:nth-child(6).leave {
+.slyde:nth-child(5).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
@@ -20641,13 +20636,32 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   background-color: transparent;
 }
 
+.slyde:nth-child(6) {
+  z-index: 5;
+  transform: rotate(1deg) translate(-50%, -50%);
+}
+.slyde:nth-child(6).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(1deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.in-view {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.in-view:after {
+  background-color: transparent;
+}
+
 .slyde:nth-child(7) {
   z-index: 4;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(-2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(7).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20662,11 +20676,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(8) {
   z-index: 3;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(-1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(8).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(-1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20681,11 +20695,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(9) {
   z-index: 2;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
 }
 .slyde:nth-child(9).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20700,11 +20714,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(-2deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
+  transform: rotate(0deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -21416,6 +21430,12 @@ header.header--sticky.sticky .nav-area ul li a:not(.my-btn):after {
   text-transform: uppercase;
   letter-spacing: 2px;
   padding-bottom: 1rem;
+  line-height: 140%;
+}
+@media screen and (min-width: 756px) {
+  .introduction-section .container .subheading br {
+    display: none;
+  }
 }
 .introduction-section .container h2 {
   padding-bottom: 3rem;
@@ -21911,7 +21931,7 @@ section.terms .container .inner-container ul:first-of-type {
 @media (max-width: 576px) {
   .rates-page-body [class*=table-wrapper] .table-preface [class*=col] h3 {
     font-size: 33px;
-    margin-bottom: 0rem;
+    margin-bottom: 0.5rem;
   }
 }
 .rates-page-body [class*=table-wrapper] table .th-wrap {
@@ -22448,16 +22468,15 @@ footer .rts-copyright-area-one .new-row p {
     left: 0;
     transform: translateY(-50%);
   }
-  header.header-area-four .container .row .header-four-wrapper a.logo .deer-chase-logo-badge {
+  header.header-area-four .container .row .header-four-wrapper a.logo .copper-ridge-logo {
     display: none;
   }
-  header.header-area-four .container .row .header-four-wrapper a.logo .deer-chase-logo-roman {
-    position: relative;
-    display: unset;
+  header.header-area-four .container .row .header-four-wrapper a.logo .copper-ridge-logo-long {
+    display: block;
     top: 3px;
-  }
-  header.header-area-four.header--sticky.sticky .container .row .header-four-wrapper .logo .deer-chase-logo-roman {
-    top: 0px;
+    left: 5px;
+    position: relative;
+    width: 257px;
   }
   header.header-area-four:not(.home) .container .row .header-four-wrapper .button-area-right-header .menu-btn-toggle svg rect {
     fill: white;
@@ -22535,6 +22554,21 @@ footer .rts-copyright-area-one .new-row p {
   }
 }
 @media screen and (max-width: 768px) {
+  .introduction-section .container h2 {
+    font-size: 35px;
+    line-height: 120%;
+    padding-bottom: 0;
+  }
+  .introduction-section .container h2 br {
+    display: none;
+  }
+  .introduction-section .container p {
+    columns: 1;
+    width: 100%;
+  }
+  .introduction-section .container p span:nth-of-type(2) {
+    display: none;
+  }
   .membership-page-body .container .row .col h2 {
     font-size: 58px;
   }
@@ -22548,11 +22582,16 @@ footer .rts-copyright-area-one .new-row p {
     width: 972px;
     position: relative;
   }
-  .pool-page-body .container .bento-wrapper .notices-wrapper {
-    overflow: hidden;
+  .rates-page-body [class*=table-wrapper] hr {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
-  .pool-page-body .container .bento-wrapper .notices-wrapper .notices .row [class*=col]:nth-of-type(2), .pool-page-body .container .bento-wrapper .notices-wrapper .notices .row [class*=col]:nth-of-type(3) {
-    border-top: 1.5px solid rgba(0, 0, 0, 0.05);
+  .rates-page-body [class*=table-wrapper] .table-preface [class*=col] p {
+    font-size: 16px;
+    line-height: 129%;
+  }
+  footer .container .row .logo-column div:not(.that-group) .logo-brick .logo-col .footer-logo {
+    width: 100%;
   }
 }
 @media screen and (max-width: 576px) {
@@ -22636,14 +22675,39 @@ footer .rts-copyright-area-one .new-row p {
   .booking-container .row [class*=col] p.p1 {
     font-size: 21px;
   }
-  .calendar-section .title-bar {
+  section.calendar-section .title-bar {
     padding-top: 0rem;
     flex-direction: column;
     align-items: unset;
+    padding-bottom: 1rem;
   }
-  .calendar-section .title-bar h2 {
+  section.calendar-section .title-bar h2 {
     font-size: 36px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
+    position: relative;
+    left: -2.5px;
+    line-height: 111%;
+  }
+  section.calendar-section .title-bar h2.memb {
+    margin-bottom: 15px;
+  }
+  section.calendar-section .title-bar p {
+    font-size: 16px;
+    margin-bottom: 2rem;
+    line-height: 129%;
+  }
+  section.calendar-section .title-bar .paragraph-wrapper {
+    margin-bottom: 2rem;
+  }
+  [class*=table-wrapper] .gimme-some-cushion {
+    padding-top: 0;
+  }
+  [class*=table-wrapper] .gimme-some-cushion .membership-table-preface {
+    line-height: 120%;
+    margin-bottom: 3rem;
+  }
+  [class*=table-wrapper] .addendum {
+    padding-top: 1rem;
   }
   .membership-page-body {
     padding-bottom: 0 !important;
@@ -22657,6 +22721,21 @@ footer .rts-copyright-area-one .new-row p {
   }
   .membership-page-body .container .row .col .tab-content:nth-of-type(2) {
     padding-top: 0;
+  }
+  section.form-section.membership-form, section.form-section.weddings {
+    padding: 1.5rem;
+    padding-bottom: 10rem;
+  }
+  section.form-section.membership-form .container, section.form-section.weddings .container {
+    padding: 4rem 2rem 6rem 2rem;
+  }
+  section.form-section.membership-form .container .row h3, section.form-section.weddings .container .row h3 {
+    font-size: 32px;
+    margin-bottom: 3rem;
+    line-height: 105%;
+  }
+  section.form-section.membership-form .container .row .mobile-col-top-padding, section.form-section.weddings .container .row .mobile-col-top-padding {
+    margin-top: 1rem;
   }
   section.terms {
     padding-bottom: 4rem;
@@ -22684,6 +22763,7 @@ footer .rts-copyright-area-one .new-row p {
   }
   section.weddings-page-body .container .row [class*=col] .slyder-container {
     height: 275px;
+    margin-right: auto;
   }
   section.weddings-page-body .container .row [class*=col] .slyder-container .slyde {
     min-width: 398px;
@@ -22718,6 +22798,11 @@ footer .rts-copyright-area-one .new-row p {
   }
   section.weddings-form-section .container .mobile-col-top-padding {
     padding-top: 1rem;
+  }
+  section.weddings-page-body-2 .container .row [class*=col] .center-me h3 {
+    font-size: 33px;
+    letter-spacing: -1px;
+    padding-top: 3rem;
   }
   section.course-page-body .container .embla .embla__slide__wrapper {
     height: 219px;

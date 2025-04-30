@@ -283,7 +283,7 @@ section.hours-table {
         .fee-column {
           padding: 0.75rem;
           padding-right: 1.5rem;
-         
+
           .fee-wrapper {
             padding: 2rem 3.25rem 2rem 2.75rem;
             border-radius: 3px;
@@ -618,6 +618,12 @@ header {
       text-transform: uppercase;
       letter-spacing: 2px;
       padding-bottom: 1rem;
+      line-height: 140%;
+      @media screen and (min-width: 756px) {
+        br {
+          display: none;
+        }
+      }
     }
     h2 {
       padding-bottom: 3rem;
@@ -1216,7 +1222,7 @@ section {
         [class*="col"] {
           h3 {
             font-size: 33px;
-            margin-bottom: 0rem;
+            margin-bottom: 0.5rem;
           }
         }
       }
@@ -1950,13 +1956,15 @@ footer {
               top: 50%;
               left: 0;
               transform: translateY(-50%);
-              .deer-chase-logo-badge {
+              .copper-ridge-logo {
                 display: none;
               }
-              .deer-chase-logo-roman {
-                position: relative;
-                display: unset;
+              .copper-ridge-logo-long {
+                display: block;
                 top: 3px;
+                left: 5px;
+                position: relative;
+                width: 257px;
               }
             }
           }
@@ -1967,9 +1975,6 @@ footer {
           .row {
             .header-four-wrapper {
               .logo {
-                .deer-chase-logo-roman {
-                  top: 0px;
-                }
               }
             }
           }
@@ -2107,6 +2112,27 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .introduction-section {
+    .container {
+      h2 {
+        font-size: 35px;
+        line-height: 120%;
+        padding-bottom: 0;
+        br {
+          display: none;
+        }
+      }
+      p {
+        columns: 1;
+        width: 100%;
+        span {
+          &:nth-of-type(2) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
   .membership-page-body {
     .container {
       .row {
@@ -2130,24 +2156,31 @@ footer {
     }
   }
 
-  .pool-page-body {
-    .container {
-      .bento-wrapper {
-        .notices-wrapper {
-          overflow: hidden;
-          .notices {
-            .row {
-              [class*="col"] {
-                &:nth-of-type(2),
-                &:nth-of-type(3) {
-                  border-top: 1.5px solid rgba(0, 0, 0, 0.05);
-                }
-              }
-            }
+  .rates-page-body {
+    [class*="table-wrapper"] {
+      hr {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+      }
+      .table-preface {
+        [class*="col"] {
+          p {
+            font-size: 16px;
+            line-height: 129%;
           }
         }
       }
     }
+  }
+  footer
+    .container
+    .row
+    .logo-column
+    div:not(.that-group)
+    .logo-brick
+    .logo-col
+    .footer-logo {
+    width: 100%;
   }
 }
 
@@ -2341,15 +2374,42 @@ footer {
       }
     }
   }
-  .calendar-section {
+  section.calendar-section {
     .title-bar {
       padding-top: 0rem;
       flex-direction: column;
       align-items: unset;
+      padding-bottom: 1rem;
       h2 {
         font-size: 36px;
-        margin-bottom: 8px;
+        margin-bottom: 5px;
+        position: relative;
+        left: -2.5px;
+        line-height: 111%;
+        &.memb {
+          margin-bottom: 15px;
+        }
       }
+      p {
+        font-size: 16px;
+        margin-bottom: 2rem;
+        line-height: 129%;
+      }
+      .paragraph-wrapper {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  [class*="table-wrapper"] {
+    .gimme-some-cushion {
+      padding-top: 0;
+      .membership-table-preface {
+        line-height: 120%;
+        margin-bottom: 3rem;
+      }
+    }
+    .addendum {
+      padding-top: 1rem;
     }
   }
   .membership-page-body {
@@ -2371,6 +2431,29 @@ footer {
       }
     }
   }
+
+  section {
+    &.form-section {
+      &.membership-form, &.weddings {
+        padding: 1.5rem;
+        padding-bottom: 10rem;
+        .container {
+          padding: 4rem 2rem 6rem 2rem;
+          .row {
+            h3 {
+              font-size: 32px;
+              margin-bottom: 3rem;
+              line-height: 105%;
+            }
+            .mobile-col-top-padding {
+              margin-top: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
   section {
     &.terms {
       padding-bottom: 4rem;
@@ -2395,6 +2478,8 @@ footer {
     }
   }
 
+ 
+
   section {
     &.weddings-page-body {
       .container {
@@ -2407,6 +2492,7 @@ footer {
             }
             .slyder-container {
               height: 275px;
+              margin-right: auto;
               .slyde {
                 min-width: 398px;
                 &.square {
@@ -2417,11 +2503,6 @@ footer {
           }
         }
       }
-    }
-  }
-
-  section {
-    &.weddings-page-body {
       .gradient-mask {
         background: radial-gradient(
           ellipse 80% 50% at 50% 30%,
@@ -2446,6 +2527,7 @@ footer {
               font-size: 29px;
               line-height: 31px;
             }
+            
           }
         }
         form {
@@ -2463,7 +2545,23 @@ footer {
         }
       }
     }
+    &.weddings-page-body-2 {
+      .container {
+        .row {
+          [class*='col'] {
+            .center-me {
+              h3 {
+                font-size: 33px;
+                letter-spacing: -1px;
+                padding-top: 3rem;
+              }
+            }
+          }
+        }
+      }
+    }
   }
+
   section {
     &.course-page-body {
       .container {

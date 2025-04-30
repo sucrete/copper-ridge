@@ -268,21 +268,27 @@ export class Footer extends LitElement {
         <div class="mobile-menu-main">
           <nav class="nav-main mainmenu-nav mt--30">
             <ul class="mainmenu metismenu" id="mobile-menu-active">
-              <li>
-                <a href="rates.html" class="main">Rates</a>
+            <li class="has-droupdown">
+                <a href="#" class="main" aria-expanded="false">Rates</a>
+                <ul class="submenu mm-collapse">
+                  <li><a href="rates.html">Greens Fees</a></li>
+                  <li><a href="lessons.html">Lessons</a></li>
+                </ul>
               </li>
               <li>
                 <a href="membership.html" class="main">Membership</a>
               </li>
               <li>
-                <a href="weddings.html" class="main">Weddings</a>
+                <a href="weddings.html" class="main">Weddings & Banquets</a>
               </li>
 
-              <li>
-                <a href="course.html" class="main">Course</a>
-              </li>
-              <li>
-                <a href="events.html" class="main">Events</a>
+              <li class="has-droupdown">
+                <a href="#" class="main" aria-expanded="false">Events</a>
+                <ul class="submenu mm-collapse">
+                  <li><a href="calendar.html">Calendar</a></li>
+                  <li><a href="tournaments.html">Tournaments</a></li>
+                  <li><a href="junior-golf-camp.html">Jr. Golf Camp</a></li>
+                </ul>
               </li>
               <li>
                 <a href="contact.html" class="main">Contact</a>
