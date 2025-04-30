@@ -200,7 +200,7 @@ section.hours-table {
             width: auto;
             height: 32px;
             margin-bottom: 1rem;
-            margin-right: .5rem;
+            margin-right: 0.5rem;
             &:nth-of-type(3) {
               height: 35px;
             }
@@ -248,7 +248,7 @@ section.hours-table {
         .schedule-column {
           padding-left: 3rem;
           padding-right: 4rem;
-          [class*='day'] {
+          [class*="day"] {
             .days {
               // font-family: "Aeonik Medium";
             }
@@ -281,50 +281,31 @@ section.hours-table {
           }
         }
         .fee-column {
-          padding: 1rem;
-          padding-right: 1.75rem;
+          padding: 0.75rem;
+          padding-right: 1.5rem;
+         
           .fee-wrapper {
-            padding: 3rem 4rem 3rem 4rem;
-            border-radius: 5px;
+            padding: 2rem 3.25rem 2rem 2.75rem;
+            border-radius: 3px;
             background-color: #fafafa;
+            .hours-row {
+              font-size: 18px;
+            }
           }
         }
       }
       .addendum {
         border-top: 1.5px solid rgba(0, 0, 0, 0.05);
-        padding: 3rem 4rem 3rem 3.5rem;
+        padding: 0.75rem;
         line-height: 140%;
         font-size: 18px;
         color: #088442;
-        .green-sheen {
-          background: #f0f5f1;
-          border-radius: 5px;
-          padding: 2.5rem;
-          letter-spacing: 0.2px;
-          .asterisk {
-            height: 17px;
-            margin-bottom: 2rem;
-            width: auto;
-            display: inline;
-            path {
-              fill: #1aab5b;
-            }
-          }
-          p {
-            color: var(--color-offset);
-            line-height: 130%;
-            &:first-of-type {
-              margin-bottom: 15px;
-            }
-
-            a {
-              &:visited,
-              &:hover,
-              &:focus {
-                color: inherit;
-              }
-            }
-          }
+        .addendum-wrapper {
+          padding: 2.25rem 3.25rem 2.25rem 2.75rem;
+          border-radius: 3px;
+          border-bottom-left-radius: 7px;
+          border-bottom-right-radius: 7px;
+          background-color: rgb(242, 252, 242);
         }
       }
     }

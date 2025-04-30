@@ -20529,11 +20529,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20548,47 +20548,9 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(1deg) translate(-50%, -50%);
-}
-.slyde:nth-child(2).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.in-view {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.in-view:after {
-  background-color: transparent;
-}
-
-.slyde:nth-child(3) {
-  z-index: 8;
-  transform: rotate(-2deg) translate(-50%, -50%);
-}
-.slyde:nth-child(3).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.in-view {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.in-view:after {
-  background-color: transparent;
-}
-
-.slyde:nth-child(4) {
-  z-index: 7;
   transform: rotate(-4deg) translate(-50%, -50%);
 }
-.slyde:nth-child(4).leave {
+.slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(-4deg) translate(-50%, -15rem);
   opacity: 0;
@@ -20603,13 +20565,51 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   background-color: transparent;
 }
 
+.slyde:nth-child(3) {
+  z-index: 8;
+  transform: rotate(3deg) translate(-50%, -50%);
+}
+.slyde:nth-child(3).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(3deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.in-view {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.in-view:after {
+  background-color: transparent;
+}
+
+.slyde:nth-child(4) {
+  z-index: 7;
+  transform: rotate(2deg) translate(-50%, -50%);
+}
+.slyde:nth-child(4).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(2deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.in-view {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.in-view:after {
+  background-color: transparent;
+}
+
 .slyde:nth-child(5) {
   z-index: 6;
-  transform: rotate(-3deg) translate(-50%, -50%);
+  transform: rotate(-1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(5).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
+  transform: rotate(-1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20643,28 +20643,9 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(7) {
   z-index: 4;
-  transform: rotate(3deg) translate(-50%, -50%);
-}
-.slyde:nth-child(7).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(3deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.in-view {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.in-view:after {
-  background-color: transparent;
-}
-
-.slyde:nth-child(8) {
-  z-index: 3;
   transform: rotate(2deg) translate(-50%, -50%);
 }
-.slyde:nth-child(8).leave {
+.slyde:nth-child(7).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
@@ -20679,13 +20660,32 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   background-color: transparent;
 }
 
+.slyde:nth-child(8) {
+  z-index: 3;
+  transform: rotate(0deg) translate(-50%, -50%);
+}
+.slyde:nth-child(8).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(0deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.in-view {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.in-view:after {
+  background-color: transparent;
+}
+
 .slyde:nth-child(9) {
   z-index: 2;
-  transform: rotate(-2deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(9).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20700,11 +20700,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(-2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -21152,45 +21152,30 @@ section.hours-table .container .the-table-itself .some-tables .intro-column p {
   font-size: 18px;
 }
 section.hours-table .container .the-table-itself .some-tables .fee-column {
-  padding: 1rem;
-  padding-right: 1.75rem;
+  padding: 0.75rem;
+  padding-right: 1.5rem;
 }
 section.hours-table .container .the-table-itself .some-tables .fee-column .fee-wrapper {
-  padding: 3rem 4rem 3rem 4rem;
-  border-radius: 5px;
+  padding: 2rem 3.25rem 2rem 2.75rem;
+  border-radius: 3px;
   background-color: #fafafa;
+}
+section.hours-table .container .the-table-itself .some-tables .fee-column .fee-wrapper .hours-row {
+  font-size: 18px;
 }
 section.hours-table .container .the-table-itself .addendum {
   border-top: 1.5px solid rgba(0, 0, 0, 0.05);
-  padding: 3rem 4rem 3rem 3.5rem;
+  padding: 0.75rem;
   line-height: 140%;
   font-size: 18px;
   color: #088442;
 }
-section.hours-table .container .the-table-itself .addendum .green-sheen {
-  background: #f0f5f1;
-  border-radius: 5px;
-  padding: 2.5rem;
-  letter-spacing: 0.2px;
-}
-section.hours-table .container .the-table-itself .addendum .green-sheen .asterisk {
-  height: 17px;
-  margin-bottom: 2rem;
-  width: auto;
-  display: inline;
-}
-section.hours-table .container .the-table-itself .addendum .green-sheen .asterisk path {
-  fill: #1aab5b;
-}
-section.hours-table .container .the-table-itself .addendum .green-sheen p {
-  color: var(--color-offset);
-  line-height: 130%;
-}
-section.hours-table .container .the-table-itself .addendum .green-sheen p:first-of-type {
-  margin-bottom: 15px;
-}
-section.hours-table .container .the-table-itself .addendum .green-sheen p a:visited, section.hours-table .container .the-table-itself .addendum .green-sheen p a:hover, section.hours-table .container .the-table-itself .addendum .green-sheen p a:focus {
-  color: inherit;
+section.hours-table .container .the-table-itself .addendum .addendum-wrapper {
+  padding: 2.25rem 3.25rem 2.25rem 2.75rem;
+  border-radius: 3px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  background-color: rgb(242, 252, 242);
 }
 section.hours-table.jr-golf-table {
   background-color: #f6f6f6;
