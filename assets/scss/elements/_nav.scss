@@ -1,0 +1,135 @@
+.nav-area {
+  ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    li {
+      margin: 0;
+      padding: 0;
+
+      a {
+        padding: 38px 0;
+        display: block;
+        color: #000000;
+        font-size: 17px;
+        font-family: "Aeonik Medium";
+        position: relative;
+        // -webkit-text-stroke: 1px;
+        &:after {
+          background: none repeat scroll 0 0 transparent;
+          bottom: 3.25rem;
+          content: "";
+          display: block;
+          height: 1.8px;
+          left: 50%;
+          position: absolute;
+          background: #0e5023;
+          transition: width 0.3s ease 0s, left 0.3s ease 0s,
+            opacity 0.3s ease 0s;
+          width: 0;
+          opacity: 0;
+        }
+        &:hover {
+          color: #0e5023;
+          &:after {
+            width: 100%;
+            left: 0;
+            opacity: 1;
+          }
+        }
+        &.active {
+          color: #0e5023;
+          &:after {
+            width: 100%;
+            left: 0;
+            opacity: 1;
+          }
+          &.book-tee-time-btn {
+            &:after {
+              opacity: 0;
+            }
+            &:hover {
+              &:after {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.header--sticky.sticky {
+  .nav-area ul li > a.nav-link {
+    padding: 20px 0;
+  }
+}
+.header--sticky.header-area-four {
+  &:not(.home) {
+    .header-four-wrapper {
+      .nav-area {
+        nav {
+          .parent-nav {
+            .nav-link {
+              &:after {
+                background: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.has-dropdown {
+  a {
+    display: flex;
+    align-items: center;
+
+    i {
+      &::after {
+        display: none;
+      }
+
+      &::before {
+        top: -11px;
+        font-size: 11px;
+        right: -14px;
+        transition: 0.25s ease;
+        transform-origin: center;
+        -webkit-text-stroke: 0.75px;
+      }
+    }
+  }
+
+  &:hover {
+    & > a {
+      i {
+        &::before {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+
+.nav-area {
+  nav {
+    ul {
+      .has-dropdown {
+        .submenu {
+          li {
+            a:after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
