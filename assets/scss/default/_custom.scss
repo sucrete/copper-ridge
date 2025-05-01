@@ -1660,7 +1660,7 @@ footer {
                   color: rgba(255, 255, 255, 0.65);
                 }
                 &:not(:first-of-type) {
-                  margin-top: 1rem;
+                  margin-top: 1.5rem;
                 }
               }
               .footer-hours {
@@ -2172,16 +2172,6 @@ footer {
       }
     }
   }
-  footer
-    .container
-    .row
-    .logo-column
-    div:not(.that-group)
-    .logo-brick
-    .logo-col
-    .footer-logo {
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 576px) {
@@ -2298,12 +2288,79 @@ footer {
       }
     }
   }
+
+  // Junior Golf Camp page
   section.hours-table {
     padding-top: 2rem !important;
     .container {
       .the-table-itself {
         .hours-table-brow {
           flex-direction: column;
+          .table-title-wrapper {
+            padding: 1.5rem;
+            padding-top: 2.5rem;
+            padding-bottom: 1.65rem;
+            .img-wrapper {
+              img {
+                &.clock-icon {
+                  height: 22px;
+                  &:nth-of-type(3) {
+                    height: 27px;
+                  }
+                }
+              }
+            }
+            .title {
+              padding-top: 0;
+            }
+          }
+        }
+        .some-tables {
+          [class*="col"] {
+            padding: 0rem;
+            .row {
+              .border-along-bottom {
+                border: none
+              }
+              .intro-column {
+                padding: 2.5rem 4.15rem;
+                .intro-paragraph {
+                  text-align: justify;
+                  line-height: 128%;
+                  font-size: 16px;
+                }
+              }
+              .sessions-column {
+                padding: 2.5rem 4.15rem;
+                padding-top: 2.25rem;
+                .sessions-title {
+                }
+                .hours-row {
+                  font-size: 16px;
+                  border: none;
+                  .days {
+                    font-family: "Aeonik Medium";
+                  }
+                }
+              }
+              .fee-column {
+                padding: 0.75rem 2.15rem;
+                .fee-wrapper {
+                  padding: 2rem 2.15rem;
+                  .hours-row {
+                  }
+                }
+              }
+              [class*="col"] {
+                .schedule-column {
+                  .hours-title {
+                  }
+                  .hours-row {
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -2382,7 +2439,7 @@ footer {
       padding-bottom: 1rem;
       h2 {
         font-size: 36px;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
         position: relative;
         left: -2.5px;
         line-height: 111%;
@@ -2397,6 +2454,15 @@ footer {
       }
       .paragraph-wrapper {
         margin-bottom: 2rem;
+      }
+    }
+    &.aka-events {
+      .container {
+        .title-bar {
+          p {
+            margin-bottom: 4rem;
+          }
+        }
       }
     }
   }
@@ -2434,7 +2500,8 @@ footer {
 
   section {
     &.form-section {
-      &.membership-form, &.weddings {
+      &.membership-form,
+      &.weddings {
         padding: 1.5rem;
         padding-bottom: 10rem;
         .container {
@@ -2477,8 +2544,6 @@ footer {
       }
     }
   }
-
- 
 
   section {
     &.weddings-page-body {
@@ -2527,7 +2592,6 @@ footer {
               font-size: 29px;
               line-height: 31px;
             }
-            
           }
         }
         form {
@@ -2548,7 +2612,7 @@ footer {
     &.weddings-page-body-2 {
       .container {
         .row {
-          [class*='col'] {
+          [class*="col"] {
             .center-me {
               h3 {
                 font-size: 33px;
@@ -2582,6 +2646,51 @@ footer {
             .single-location-area-contact {
               p {
                 margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  section {
+    &.tournaments-page-body {
+      .container {
+        .row {
+          [class*="col"] {
+            h2 {
+              font-size: 36px;
+              line-height: 111%;
+            }
+            .slyder-container {
+              margin-right: auto;
+              height: 300px;
+              .slyde {
+                min-width: 398px;
+                &.square {
+                  min-width: 325px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .container {
+      .row {
+        .logo-column {
+          div:not(.that-group) {
+            .link-group {
+              .contact-stack {
+                border-right: none;
+                border-bottom: 1px solid var(--color-offset);
+                padding-bottom: 4rem;
+              }
+              .social-stack {
+                padding-left: 0;
+                padding-top: 4rem;
               }
             }
           }
