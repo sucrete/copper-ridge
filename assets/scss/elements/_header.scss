@@ -321,7 +321,7 @@ header .rts-btn {
 .header-area-four {
   .button-area-right-header {
     display: none;
-
+    z-index: 900;
     @media #{$mdsm-layout} {
       display: block;
 
