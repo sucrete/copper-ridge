@@ -180,8 +180,7 @@ section.hours-table {
   .container {
     .the-table-itself {
       background: white;
-      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
       border-radius: 10px;
       overflow: hidden;
       .hours-table-brow {
@@ -240,9 +239,19 @@ section.hours-table {
         .sessions-column {
           padding: 3rem 4rem 3rem 4rem;
         }
+        .schedule-column {
+          .hours-row {
+            .comma {
+              display: none;
+            }
+          }
+        }
         .sessions-column {
           .hours-row {
             font-size: 18px;
+            .comma {
+              display: none;
+            }
           }
         }
         .schedule-column {
@@ -313,7 +322,7 @@ section.hours-table {
   &.jr-golf-table {
     background-color: #f6f6f6;
     .the-table-itself {
-      box-shadow: none;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
       .hours-table-brow {
         .table-title-wrapper {
           h5 {
@@ -2320,7 +2329,7 @@ footer {
             padding: 0rem;
             .row {
               .border-along-bottom {
-                border: none
+                border: none;
               }
               .intro-column {
                 padding: 2.5rem 4.15rem;
@@ -2338,8 +2347,18 @@ footer {
                 .hours-row {
                   font-size: 16px;
                   border: none;
+                  display: inline;
                   .days {
                     font-family: "Aeonik Medium";
+                  }
+                  .comma {
+                    display: inline;
+                  }
+                  .gap {
+                    display: none;
+                  }
+                  * {
+                    display: inline;
                   }
                 }
               }
@@ -2353,16 +2372,43 @@ footer {
               }
               [class*="col"] {
                 .schedule-column {
+                  padding: 2.5rem 5.1rem;
+                  padding-top: 2.25rem;
                   .hours-title {
                   }
                   .hours-row {
+                    display: inline;
+                    font-size: 16px;
+                    border: none;
+                    * {
+                      display: inline;
+                    }
+                    .days {
+                      font-family: "Aeonik Medium";
+                    }
+                    .comma {
+                      display: inline;
+                    }
+                    .gap {
+                      display: none;
+                    }
                   }
                 }
               }
             }
           }
         }
+        .addendum {
+          .addendum-wrapper {
+            font-size: 16px;
+            padding: 2.25rem 2.25rem 2.25rem 2.25rem;
+            line-height: 128%;
+          }
+        }
       }
+    }
+    &.jr-golf-table {
+      padding-bottom: 2rem
     }
   }
 

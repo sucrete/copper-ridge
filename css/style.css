@@ -20542,11 +20542,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(1) {
   z-index: 10;
-  transform: rotate(-3deg) translate(-50%, -50%);
+  transform: rotate(-1deg) translate(-50%, -50%);
 }
 .slyde:nth-child(1).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
+  transform: rotate(-1deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20561,11 +20561,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(-2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20580,11 +20580,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(3) {
   z-index: 8;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(3).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20599,66 +20599,9 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(4) {
   z-index: 7;
-  transform: rotate(-2deg) translate(-50%, -50%);
-}
-.slyde:nth-child(4).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.in-view {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.in-view:after {
-  background-color: transparent;
-}
-
-.slyde:nth-child(5) {
-  z-index: 6;
-  transform: rotate(1deg) translate(-50%, -50%);
-}
-.slyde:nth-child(5).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.in-view {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.in-view:after {
-  background-color: transparent;
-}
-
-.slyde:nth-child(6) {
-  z-index: 5;
-  transform: rotate(-2deg) translate(-50%, -50%);
-}
-.slyde:nth-child(6).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-2deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.in-view {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.in-view:after {
-  background-color: transparent;
-}
-
-.slyde:nth-child(7) {
-  z-index: 4;
   transform: rotate(2deg) translate(-50%, -50%);
 }
-.slyde:nth-child(7).leave {
+.slyde:nth-child(4).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
@@ -20673,13 +20616,70 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   background-color: transparent;
 }
 
+.slyde:nth-child(5) {
+  z-index: 6;
+  transform: rotate(0deg) translate(-50%, -50%);
+}
+.slyde:nth-child(5).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(0deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.in-view {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.in-view:after {
+  background-color: transparent;
+}
+
+.slyde:nth-child(6) {
+  z-index: 5;
+  transform: rotate(-4deg) translate(-50%, -50%);
+}
+.slyde:nth-child(6).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-4deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.in-view {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.in-view:after {
+  background-color: transparent;
+}
+
+.slyde:nth-child(7) {
+  z-index: 4;
+  transform: rotate(1deg) translate(-50%, -50%);
+}
+.slyde:nth-child(7).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(1deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.in-view {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.in-view:after {
+  background-color: transparent;
+}
+
 .slyde:nth-child(8) {
   z-index: 3;
-  transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(8).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(0deg) translate(-50%, -15rem);
+  transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -20713,11 +20713,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -21097,7 +21097,7 @@ section.hours-table .border-along-bottom {
 }
 section.hours-table .container .the-table-itself {
   background: white;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -21153,8 +21153,14 @@ section.hours-table .container .the-table-itself .some-tables .intro-column,
 section.hours-table .container .the-table-itself .some-tables .sessions-column {
   padding: 3rem 4rem 3rem 4rem;
 }
+section.hours-table .container .the-table-itself .some-tables .schedule-column .hours-row .comma {
+  display: none;
+}
 section.hours-table .container .the-table-itself .some-tables .sessions-column .hours-row {
   font-size: 18px;
+}
+section.hours-table .container .the-table-itself .some-tables .sessions-column .hours-row .comma {
+  display: none;
 }
 section.hours-table .container .the-table-itself .some-tables .schedule-column {
   padding-left: 3rem;
@@ -21194,7 +21200,7 @@ section.hours-table.jr-golf-table {
   background-color: #f6f6f6;
 }
 section.hours-table.jr-golf-table .the-table-itself {
-  box-shadow: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 section.hours-table.jr-golf-table .the-table-itself .hours-table-brow .table-title-wrapper h5 {
   line-height: 107%;
@@ -22679,15 +22685,54 @@ footer .rts-copyright-area-one .new-row p {
   section.hours-table .container .the-table-itself .some-tables [class*=col] .row .sessions-column .hours-row {
     font-size: 16px;
     border: none;
+    display: inline;
   }
   section.hours-table .container .the-table-itself .some-tables [class*=col] .row .sessions-column .hours-row .days {
     font-family: "Aeonik Medium";
+  }
+  section.hours-table .container .the-table-itself .some-tables [class*=col] .row .sessions-column .hours-row .comma {
+    display: inline;
+  }
+  section.hours-table .container .the-table-itself .some-tables [class*=col] .row .sessions-column .hours-row .gap {
+    display: none;
+  }
+  section.hours-table .container .the-table-itself .some-tables [class*=col] .row .sessions-column .hours-row * {
+    display: inline;
   }
   section.hours-table .container .the-table-itself .some-tables [class*=col] .row .fee-column {
     padding: 0.75rem 2.15rem;
   }
   section.hours-table .container .the-table-itself .some-tables [class*=col] .row .fee-column .fee-wrapper {
     padding: 2rem 2.15rem;
+  }
+  section.hours-table .container .the-table-itself .some-tables [class*=col] .row [class*=col] .schedule-column {
+    padding: 2.5rem 5.1rem;
+    padding-top: 2.25rem;
+  }
+  section.hours-table .container .the-table-itself .some-tables [class*=col] .row [class*=col] .schedule-column .hours-row {
+    display: inline;
+    font-size: 16px;
+    border: none;
+  }
+  section.hours-table .container .the-table-itself .some-tables [class*=col] .row [class*=col] .schedule-column .hours-row * {
+    display: inline;
+  }
+  section.hours-table .container .the-table-itself .some-tables [class*=col] .row [class*=col] .schedule-column .hours-row .days {
+    font-family: "Aeonik Medium";
+  }
+  section.hours-table .container .the-table-itself .some-tables [class*=col] .row [class*=col] .schedule-column .hours-row .comma {
+    display: inline;
+  }
+  section.hours-table .container .the-table-itself .some-tables [class*=col] .row [class*=col] .schedule-column .hours-row .gap {
+    display: none;
+  }
+  section.hours-table .container .the-table-itself .addendum .addendum-wrapper {
+    font-size: 16px;
+    padding: 2.25rem 2.25rem 2.25rem 2.25rem;
+    line-height: 128%;
+  }
+  section.hours-table.jr-golf-table {
+    padding-bottom: 2rem;
   }
   section.perks .container {
     padding: 0 15px;
