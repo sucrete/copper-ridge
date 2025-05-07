@@ -81,12 +81,6 @@ export class Header extends LitElement {
                       >
                       <ul class="submenu parent-nav with-border">
                         <li>
-                          <a href="calendar.html"
-                            ><i class="fa-sharp fa-regular fa-chevron-right"></i
-                            >Calendar</a
-                          >
-                        </li>
-                        <li>
                           <a href="tournaments.html"
                             ><i class="fa-sharp fa-regular fa-chevron-right"></i
                             >Tournaments</a
@@ -105,8 +99,9 @@ export class Header extends LitElement {
                     </li>
                     <li>
                       <a
-                        href="book-tee-time.html"
+                        href="https://bookateetime.teequest.com/course/130"
                         class="rts-btn btn-primary my-btn book-tee-time-btn"
+                        target="_blank"
                       >
                         Book Tee Time
                         <img
