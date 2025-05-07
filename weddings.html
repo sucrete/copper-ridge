@@ -34,6 +34,7 @@
       media="print"
       onload="this.media='all'"
     />
+
     <link rel="stylesheet preload" href="css/style.css" as="style" />
 
     <!-- header Lit component -->
@@ -216,38 +217,60 @@
               Get in touch with us and we'll help you put together the perfect
               event.
             </h3>
-            <form>
+            <form id="wedding-form">
               <div class="row pb-3 g-5">
                 <div class="col-12 col-md-6">
-                  <label for="">Name</label>
-                  <input type="text" id="" name="" required />
+                  <label for="submitter-name">Name</label>
+                  <input
+                    type="text"
+                    id="submitter-name"
+                    name="submitters_name"
+                    required
+                  />
                 </div>
                 <div class="col-12 col-md-6 mobile-col-top-padding">
-                  <label for="_1">Email</label>
-                  <input type="email" id="_1" name="_1" required />
+                  <label for="submitter-email">Email</label>
+                  <input
+                    type="email"
+                    id="submitter-email"
+                    name="submitters_email"
+                    required
+                  />
                 </div>
               </div>
 
               <div class="row pb-3 g-5 mobile-row-top-padding">
                 <div class="col-12 col-md-6">
-                  <label for="_2">Phone (Optional)</label>
-                  <input type="tel" id="_2" name="_2" />
+                  <label for="submitter-phone">Phone (Optional)</label>
+                  <input
+                    type="tel"
+                    id="submitter-phone"
+                    name="submitters_phone"
+                  />
                 </div>
                 <div class="col-12 col-md-6 mobile-col-top-padding">
-                  <label for="approximate_of_people">Approx. # of People</label>
+                  <label for="group-number-count">Approx. # of People</label>
                   <input
                     type="number"
-                    id="approximate_of_people"
-                    name="approximate_of_people"
+                    id="group-number-count"
+                    name="group_number_count"
                     required
                   />
                 </div>
               </div>
               <div>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
+                <label for="submitters-message">Message (Optional)</label>
+                <textarea
+                  id="submitters-message"
+                  name="submitters_message"
+                ></textarea>
               </div>
-              <button class="rts-btn btn-primary" type="submit">Submit</button>
+              <div class="message-container">
+                <p id="message"></p>
+              </div>
+              <button id="button" class="rts-btn btn-primary" type="submit">
+                Submit
+              </button>
             </form>
           </div>
           <div class="d-none d-md-flex col-4">
@@ -366,5 +389,14 @@
     <script type="module" src="./assets/js/stacked-images.js "></script>
     <script defer src="assets/js/main.js"></script>
     <script src="./assets/js/weather.js "></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./assets/js/wedding-form-util.js "
+    ></script>
   </body>
 </html>

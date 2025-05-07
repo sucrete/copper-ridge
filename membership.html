@@ -186,33 +186,33 @@
         <div class="row justify-content-between">
           <div class="col-12 col-md-7">
             <h3>Membership Request</h3>
-            <form>
+            <form id="membership-form">
               <div class="row pb-3 g-5">
                 <div class="col-12 col-md-6">
                   <label for="">First Name</label>
-                  <input type="text" id="" name="" required="" />
+                  <input type="text" id="" name="first_name" required="" />
                 </div>
                 <div class="col-12 col-md-6 mobile-col-top-padding">
                   <label for="_1">Last Name</label>
-                  <input type="text" id="_1" name="_1" required="" />
+                  <input type="text" id="_1" name="last_name" required="" />
                 </div>
               </div>
 
               <div class="row pb-3 g-5 mobile-row-top-padding">
                 <div class="col-12 col-md-6">
                   <label for="_2">Phone (Optional)</label>
-                  <input type="tel" id="_2" name="_2" />
+                  <input type="tel" id="phone" name="phone" />
                 </div>
                 <div class="col-12 col-md-6 mobile-col-top-padding">
                   <label for="approximate_of_people">Email</label>
-                  <input type="email" required="" />
+                  <input type="email" required="" name="email" />
                 </div>
               </div>
               <div>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required=""></textarea>
+                <label for="message">Message (Optional)</label>
+                <textarea id="message" name="message"></textarea>
               </div>
-              <button class="rts-btn btn-primary" type="submit">Submit</button>
+              <button id="button" class="rts-btn btn-primary" type="submit">Submit</button>
             </form>
           </div>
           <div class="d-none d-md-flex col-4">
@@ -322,6 +322,7 @@
     </div>
     <!-- side bar men end here  -->
 
+    <!-- vendors -->
     <script defer src="assets/js/plugins/jquery.js"></script>
     <script defer src="assets/js/vendor/waw.js"></script>
     <script defer src="assets/js/vendor/jarallax.js"></script>
@@ -329,9 +330,21 @@
     <script defer src="assets/js/plugins/svg-inject.js"></script>
     <script defer src="assets/js/plugins/metismenu.js"></script>
     <script defer src="assets/js/vendor/contact-form.js"></script>
+
     <script type="module" src="./assets/js/stacked-images.js "></script>
     <script defer src="assets/js/main.js"></script>
     <script src="./assets/js/weather.js "></script>
     <script src="assets/js/swiper-helper.js"></script>
+
+    <!-- form handlers -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./assets/js/membership-form-util.js "
+    ></script>
   </body>
 </html>

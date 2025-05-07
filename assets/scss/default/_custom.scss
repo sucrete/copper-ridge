@@ -1568,8 +1568,9 @@ footer {
           .logo-brick {
             display: flex;
             flex-direction: row;
-            padding-bottom: 3rem;
+            padding-bottom: 3.5rem;
             align-items: center;
+            border-bottom: 1px solid var(--color-offset);
             .logo-col {
               .footer-logo {
                 width: 300px;
@@ -1619,6 +1620,7 @@ footer {
             }
           }
           .link-group {
+            padding-top: 3rem;
             .contact-stack {
               padding-top: 0.25rem;
               padding-right: 3rem;
