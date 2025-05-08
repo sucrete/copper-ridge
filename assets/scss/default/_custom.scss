@@ -2189,6 +2189,9 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
+  .br-on-homepage {
+    display: none;
+  }
   header {
     // at top of page (before scroll-down)
     &.header-area-four {

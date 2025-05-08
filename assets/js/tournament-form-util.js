@@ -16,7 +16,7 @@ document.getElementById('tournament-form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Submit';
-      alert('Sent!');
+      alert('Message Sent!');
     }, (err) => {
       btn.value = 'Submit';
       alert(JSON.stringify(err));
