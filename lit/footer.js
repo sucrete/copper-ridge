@@ -206,8 +206,7 @@ export class Footer extends LitElement {
               <div class="copyright-wrapper row">
                 <div class="col-12 col-md-6 text-center text-md-start">
                   <p class="copyright">
-                    © Copper Ridge Golf Club ${new Date().getFullYear()} | Wink
-                    Entertainment, LLC
+                    © Copper Ridge Golf Club ${new Date().getFullYear()} 
                   </p>
                 </div>
                 <div class="col-12 col-md-6 text-center text-md-end">
