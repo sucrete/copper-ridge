@@ -1,24 +1,41 @@
 (function () {
-  emailjs.init('bgPMvjgJ9C-HJ3z9j');
+  emailjs.init("bgPMvjgJ9C-HJ3z9j");
 })();
 
-const btn = document.getElementById('button');
+const btn = document.getElementsByClassName("button-text")[0];
+const inputs = document.getElementsByClassName("inputs-wrapper")[0];
+const msgBox = document.getElementsByClassName("message-sent-box")[0];
 
-document.getElementById('membership-form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+const firstName = document.getElementById("name");
+const lastName = document.getElementById("last");
+const email = document.getElementById("email");
+const phone = document.getElementById("phone");
+const message = document.getElementById("message");
 
-   btn.value = 'Sending...';
+document
+  .getElementById("membership-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
 
-   const serviceID = 'default_service';
-   const templateID = 'template_2ze9jes';
+    btn.textContent = "Sending...";
 
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Send Email';
-      alert('Sent!');
-    }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
-    });
-});
+    const serviceID = "default_service";
+    const templateID = "template_2ze9jes";
+
+    emailjs.sendForm(serviceID, templateID, this).then(
+      () => {
+        btn.textContent = "Submit";
+        firstName.value = "";
+        lastName.value = "";
+        email.value = "";
+        phone.value = "";
+        message.value = "";
+        inputs.classList.toggle("subdued");
+        msgBox.classList.toggle("show");
+      },
+      (err) => {
+        btn.textContent = "Submit";
+        alert(JSON.stringify(err));
+      }
+    );
+  });

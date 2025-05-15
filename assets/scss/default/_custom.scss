@@ -5,6 +5,10 @@
   opacity: 1;
 }
 
+.text-center-title-bg-white {
+  text-align: center;
+}
+
 .bold-me {
   font-family: "Aeonik Medium";
 }
@@ -1935,7 +1939,7 @@ footer {
             .weather-col {
               .weather-card {
                 padding: 2rem 1rem;
-                padding-bottom: .5rem;
+                padding-bottom: 0.5rem;
                 width: 100%;
                 .card-body {
                   .weather-heading {

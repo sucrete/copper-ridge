@@ -218,59 +218,70 @@
               event.
             </h3>
             <form id="wedding-form">
-              <div class="row pb-3 g-5">
-                <div class="col-12 col-md-6">
-                  <label for="submitter-name">Name</label>
-                  <input
-                    type="text"
-                    id="submitter-name"
-                    name="submitters_name"
-                    required
-                  />
-                </div>
-                <div class="col-12 col-md-6 mobile-col-top-padding">
-                  <label for="submitter-email">Email</label>
-                  <input
-                    type="email"
-                    id="submitter-email"
-                    name="submitters_email"
-                    required
-                  />
-                </div>
-              </div>
+              <div class="message-sent-box">
+                <div class="row text-center flex-column align-items-center">
+                  <div class="image-orb">
+                    <img src="assets/images/icons/message-sent.svg" alt="" />
+                  </div>
 
-              <div class="row pb-3 g-5 mobile-row-top-padding">
-                <div class="col-12 col-md-6">
-                  <label for="submitter-phone">Phone (Optional)</label>
-                  <input
-                    type="tel"
-                    id="submitter-phone"
-                    name="submitters_phone"
-                  />
-                </div>
-                <div class="col-12 col-md-6 mobile-col-top-padding">
-                  <label for="group-number-count">Approx. # of People</label>
-                  <input
-                    type="number"
-                    id="group-number-count"
-                    name="group_number_count"
-                    required
-                  />
+                  <h4>Details Submitted!</h4>
                 </div>
               </div>
-              <div>
-                <label for="submitters-message">Message (Optional)</label>
-                <textarea
-                  id="submitters-message"
-                  name="submitters_message"
-                ></textarea>
+              <div class="inputs-wrapper">
+                <div class="row pb-3 g-5">
+                  <div class="col-12 col-md-6">
+                    <label for="name">Full Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="submitters_name"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-md-6 mobile-col-top-padding">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="submitters_email"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="row pb-3 g-5 mobile-row-top-padding">
+                  <div class="col-12 col-md-6">
+                    <label for="phone">Phone (Optional)</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="submitters_phone"
+                    />
+                  </div>
+                  <div class="col-12 col-md-6 mobile-col-top-padding">
+                    <label for="group-number-count">Approx. # of People</label>
+                    <input
+                      type="number"
+                      id="group-number-count"
+                      name="group_number_count"
+                      required
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label for="message">Message (Optional)</label>
+                  <textarea
+                    id="message"
+                    name="submitters_message"
+                  ></textarea>
+                </div>
+                <div class="message-container">
+                  <p id="message"></p>
+                </div>
+                <button id="button" class="rts-btn btn-primary" type="submit">
+                  <span class="button-text">Submit Event Details</span>
+                </button>
               </div>
-              <div class="message-container">
-                <p id="message"></p>
-              </div>
-              <button id="button" class="rts-btn btn-primary" type="submit">
-                Submit
-              </button>
             </form>
           </div>
           <div class="d-none d-md-flex col-4">

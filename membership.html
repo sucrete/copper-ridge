@@ -187,32 +187,45 @@
           <div class="col-12 col-md-7">
             <h3>Membership Request</h3>
             <form id="membership-form">
-              <div class="row pb-3 g-5">
-                <div class="col-12 col-md-6">
-                  <label for="">First Name</label>
-                  <input type="text" id="" name="first_name" required="" />
-                </div>
-                <div class="col-12 col-md-6 mobile-col-top-padding">
-                  <label for="_1">Last Name</label>
-                  <input type="text" id="_1" name="last_name" required="" />
-                </div>
-              </div>
+              <div class="message-sent-box">
+                <div class="row text-center flex-column align-items-center">
+                  <div class="image-orb">
+                    <img src="assets/images/icons/message-sent.svg" alt="" />
+                  </div>
 
-              <div class="row pb-3 g-5 mobile-row-top-padding">
-                <div class="col-12 col-md-6">
-                  <label for="_2">Phone (Optional)</label>
-                  <input type="tel" id="phone" name="phone" />
-                </div>
-                <div class="col-12 col-md-6 mobile-col-top-padding">
-                  <label for="approximate_of_people">Email</label>
-                  <input type="email" required="" name="email" />
+                  <h4>Request Submitted!</h4>
                 </div>
               </div>
-              <div>
-                <label for="message">Message (Optional)</label>
-                <textarea id="message" name="message"></textarea>
+              <div class="inputs-wrapper">
+                <div class="row pb-3 g-5">
+                  <div class="col-12 col-md-6">
+                    <label for="">First Name</label>
+                    <input type="text" id="name" name="first_name" required="" />
+                  </div>
+                  <div class="col-12 col-md-6 mobile-col-top-padding">
+                    <label for="_1">Last Name</label>
+                    <input type="text" id="last" name="last_name" required="" />
+                  </div>
+                </div>
+
+                <div class="row pb-3 g-5 mobile-row-top-padding">
+                  <div class="col-12 col-md-6">
+                    <label for="_2">Phone (Optional)</label>
+                    <input type="tel" id="phone" name="phone" />
+                  </div>
+                  <div class="col-12 col-md-6 mobile-col-top-padding">
+                    <label for="approximate_of_people">Email</label>
+                    <input type="email" id="email" required="" name="email" />
+                  </div>
+                </div>
+                <div>
+                  <label for="message">Message (Optional)</label>
+                  <textarea id="message" name="message"></textarea>
+                </div>
+                <button id="button" class="rts-btn btn-primary" type="submit">
+                  <span class="button-text">Submit</span>
+                </button>
               </div>
-              <button id="button" class="rts-btn btn-primary" type="submit">Submit</button>
             </form>
           </div>
           <div class="d-none d-md-flex col-4">
