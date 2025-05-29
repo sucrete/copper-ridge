@@ -16892,11 +16892,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(2) {
   z-index: 9;
-  transform: rotate(-4deg) translate(-50%, -50%);
+  transform: rotate(-2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(2).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
+  transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -16911,11 +16911,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(3) {
   z-index: 8;
-  transform: rotate(1deg) translate(-50%, -50%);
+  transform: rotate(-2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(3).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(1deg) translate(-50%, -15rem);
+  transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -16930,11 +16930,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(4) {
   z-index: 7;
-  transform: rotate(-4deg) translate(-50%, -50%);
+  transform: rotate(-3deg) translate(-50%, -50%);
 }
 .slyde:nth-child(4).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-4deg) translate(-50%, -15rem);
+  transform: rotate(-3deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -16949,11 +16949,11 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(5) {
   z-index: 6;
-  transform: rotate(2deg) translate(-50%, -50%);
+  transform: rotate(-2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(5).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(2deg) translate(-50%, -15rem);
+  transform: rotate(-2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -17006,28 +17006,9 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .slyde:nth-child(8) {
   z-index: 3;
-  transform: rotate(-3deg) translate(-50%, -50%);
-}
-.slyde:nth-child(8).leave {
-  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-3deg) translate(-50%, -15rem);
-  opacity: 0;
-  pointer-events: none;
-  filter: sepia(0%);
-}
-.slyde.in-view {
-  transform: rotate(0) translate(-50%, -50%);
-  filter: sepia(0%);
-}
-.slyde.in-view:after {
-  background-color: transparent;
-}
-
-.slyde:nth-child(9) {
-  z-index: 2;
   transform: rotate(3deg) translate(-50%, -50%);
 }
-.slyde:nth-child(9).leave {
+.slyde:nth-child(8).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
   transform: rotate(3deg) translate(-50%, -15rem);
   opacity: 0;
@@ -17042,13 +17023,32 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   background-color: transparent;
 }
 
+.slyde:nth-child(9) {
+  z-index: 2;
+  transform: rotate(-3deg) translate(-50%, -50%);
+}
+.slyde:nth-child(9).leave {
+  transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
+  transform: rotate(-3deg) translate(-50%, -15rem);
+  opacity: 0;
+  pointer-events: none;
+  filter: sepia(0%);
+}
+.slyde.in-view {
+  transform: rotate(0) translate(-50%, -50%);
+  filter: sepia(0%);
+}
+.slyde.in-view:after {
+  background-color: transparent;
+}
+
 .slyde:nth-child(10) {
   z-index: 1;
-  transform: rotate(-1deg) translate(-50%, -50%);
+  transform: rotate(2deg) translate(-50%, -50%);
 }
 .slyde:nth-child(10).leave {
   transition: 0.5s transform ease-in-out, 0.5s opacity ease-in-out;
-  transform: rotate(-1deg) translate(-50%, -15rem);
+  transform: rotate(2deg) translate(-50%, -15rem);
   opacity: 0;
   pointer-events: none;
   filter: sepia(0%);
@@ -17847,11 +17847,11 @@ table tbody tr:nth-child(odd) td:last-child {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-table tbody tr th {
+table tbody tr th, table tbody tr td {
   vertical-align: middle;
   padding-left: 20px;
 }
-table tbody tr th .th-wrap {
+table tbody tr th .th-wrap, table tbody tr td .th-wrap {
   margin-top: auto;
   margin-bottom: auto;
   display: flex;
@@ -17859,21 +17859,21 @@ table tbody tr th .th-wrap {
   align-items: center;
   font-family: "Aeonik Medium";
   text-transform: capitalize;
-  line-height: 1em;
 }
-table tbody tr th .note {
+table tbody tr th .note, table tbody tr td .note {
   font-family: "Sono", monospace;
   font-optical-sizing: auto;
   font-weight: 450;
   /* font-style: normal; */
   font-variation-settings: "MONO" 1;
+  text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 0.5px;
   line-height: 120%;
   margin-left: 1px;
   color: #878787;
 }
-table tbody tr th .note .explainer-icon {
+table tbody tr th .note .explainer-icon, table tbody tr td .note .explainer-icon {
   width: 11.25px;
   margin-top: -2.5px;
   margin-left: -4px;

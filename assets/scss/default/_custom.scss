@@ -766,7 +766,7 @@ table {
         }
       }
 
-      th {
+      th,td {
         vertical-align: middle;
         padding-left: 20px;
         .th-wrap {
@@ -777,7 +777,7 @@ table {
           align-items: center;
           font-family: "Aeonik Medium";
           text-transform: capitalize;
-          line-height: 1em;
+          // line-height: 1em;
         }
         .note {
           font-family: "Sono", monospace;
@@ -785,6 +785,7 @@ table {
           font-weight: 450;
           /* font-style: normal; */
           font-variation-settings: "MONO" 1;
+          text-transform: uppercase;
           font-size: 13px;
           letter-spacing: 0.5px;
           line-height: 120%;
