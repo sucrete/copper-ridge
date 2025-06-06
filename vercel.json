@@ -9,12 +9,12 @@
       "statusCode": 301
     },
     {
-      "source": "/weddings-and-banquets-2/",
+      "source": "/weddings-and-banquets-2",
       "destination": "/weddings.html",
       "statusCode": 301
     },
     {
-      "source": "/portfolio-item/wedding-in-greece/",
+      "source": "/portfolio-item/wedding-in-greece",
       "destination": "/weddings.html",
       "statusCode": 301
     },
@@ -24,12 +24,12 @@
       "statusCode": 301
     },
     {
-      "source": "/product/single-annual-membership/",
+      "source": "/product/single-annual-membership",
       "destination": "/membership.html",
       "statusCode": 301
     },
     {
-      "source": "/contact-us/",
+      "source": "/contact-us",
       "destination": "/contact.html",
       "statusCode": 301
     },
