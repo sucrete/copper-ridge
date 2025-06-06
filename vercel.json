@@ -33,6 +33,6 @@
       "destination": "/contact.html",
       "statusCode": 301
     },
-    { "source": "/pro-shop/", "destination": "/", "statusCode": 301 }
+    { "source": "/pro-shop", "destination": "/", "statusCode": 301 }
   ]
 }
