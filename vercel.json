@@ -1,9 +1,10 @@
 {
+  "$schema": "www.golfcopperridge.com/vercel.json",
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/junior-golf/",
+      "source": "/junior-golf",
       "destination": "/junior-golf-camp.html",
       "statusCode": 301
     },
@@ -18,7 +19,7 @@
       "statusCode": 301
     },
     {
-      "source": "/request-membership/",
+      "source": "/request-membership",
       "destination": "/membership.html",
       "statusCode": 301
     },
