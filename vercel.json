@@ -1,4 +1,37 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/junior-golf/",
+      "destination": "/junior-golf-camp.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/weddings-and-banquets-2/",
+      "destination": "/weddings.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/portfolio-item/wedding-in-greece/",
+      "destination": "/weddings.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/request-membership/",
+      "destination": "/membership.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/product/single-annual-membership/",
+      "destination": "/membership.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact-us/",
+      "destination": "/contact.html",
+      "statusCode": 301
+    },
+    { "source": "/pro-shop/", "destination": "/", "statusCode": 301 }
+  ]
 }
