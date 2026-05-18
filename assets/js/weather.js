@@ -1,9 +1,13 @@
-//~ Standard Variables
-// API URL
+// Open-Meteo API — free, no key required
+const LAT = 42.992;
+const LON = -83.537;
 const apiUrl =
-  "https://api.pirateweather.net/forecast/EqRw5datS5zL99ze3FwQ8Q7PJEtJAC0i/42.992,-83.537?exclude=minutely,hourly,alerts,flags";
+  `https://api.open-meteo.com/v1/forecast?latitude=${LAT}&longitude=${LON}` +
+  `&current=temperature_2m,windspeed_10m,weathercode` +
+  `&daily=weathercode,temperature_2m_max,temperature_2m_min` +
+  `&temperature_unit=fahrenheit&windspeed_unit=mph` +
+  `&timezone=America%2FDetroit&forecast_days=7`;
 
-// Days of the week
 const days = [
   "Sunday",
   "Monday",
@@ -16,7 +20,7 @@ const days = [
 
 var weatherData;
 
-//~ First call Pirate Weather API
+//~ Fetch Open-Meteo API
 async function getWeather() {
   await fetch(apiUrl, { cache: "no-store" })
     .then((response) => {
@@ -26,12 +30,6 @@ async function getWeather() {
       return response.json();
     })
     .then((data) => {
-      // console.log(JSON.stringify(data, null, 2));
-      // code below gets day of the week
-      // console.log(
-      //   `%c${days[new Date(data.currently.time * 1000).getDay()]}`,
-      //   "color:green"
-      // );
       weatherData = data;
       return data;
     })
@@ -40,10 +38,22 @@ async function getWeather() {
     });
 }
 
-//~ Begin DOM manipulation - fired when fetch to API is finished - receives data object
+//~ Begin DOM manipulation - fired when fetch to API is finished
 async function populateDOM() {
   await getWeather();
-  // now you can directly use jsonData
+
+  // Rainbow "Open-Meteo" console signature
+  const text = "Open-Meteo";
+  const rainbow = [
+    "#FF0000", "#FF5500", "#FF9900", "#CCCC00",
+    "#00BB00", "#0099FF", "#0033FF", "#6600CC",
+    "#9900CC", "#CC0066",
+  ];
+  const fmt = [...text].map((ch) => `%c${ch}`).join("");
+  const styles = rainbow.map(
+    (c) => `color:${c}; font-weight:bold; font-size:16px`
+  );
+  console.log(fmt, ...styles);
 
   //~ grab all DOM elements
   // today
@@ -91,71 +101,56 @@ async function populateDOM() {
     .getElementsByClassName("lo")[0];
 
   //~ Set Today's Weather
-  // console.log(weatherData.currently.icon);
-  const today = weatherData.currently;
-  // set today's icon
-  const iconPath = assignIcon(today.icon);
-  weatherIcon.src = `./assets/images/icons/${iconPath}.png`;
+  const current = weatherData.current;
+  weatherIcon.src = `./assets/images/icons/${wmoToIcon(current.weathercode)}.png`;
+  theTemp.innerHTML = Math.ceil(current.temperature_2m);
+  weather.innerHTML = wmoToSummary(current.weathercode);
+  windSpeed.innerHTML = Math.ceil(current.windspeed_10m);
 
-  // set today's temperature readable
-  theTemp.innerHTML = Math.ceil(today.temperature);
+  //~ Set forecast days (daily[0] = today, [1] = tomorrow, etc.)
+  const daily = weatherData.daily;
 
-  // set today's weather readable
-  weather.innerHTML = today.summary;
+  const setForecastDay = (index, dayEl, iconEl, hiEl, loEl, ext) => {
+    // Use noon local time to avoid midnight timezone edge cases
+    dayEl.innerHTML = days[new Date(daily.time[index] + "T12:00:00").getDay()];
+    iconEl.src = `./assets/images/icons/${wmoToIcon(daily.weathercode[index])}.${ext}`;
+    hiEl.innerHTML = Math.ceil(daily.temperature_2m_max[index]);
+    loEl.innerHTML = Math.ceil(daily.temperature_2m_min[index]);
+  };
 
-  // set today's wind speed
-  windSpeed.innerHTML = Math.ceil(today.windSpeed);
-
-  //~ set tomorrow's Weather
-  const tomorrow = weatherData.daily.data[2];
-  tomorrowDay.innerHTML = days[new Date(tomorrow.time * 1000).getDay()];
-  tomorrowWeatherIcon.src = `./assets/images/icons/${assignIcon(
-    tomorrow.icon
-  )}.svg`;
-  tomorrowHi.innerHTML = Math.ceil(tomorrow.temperatureHigh);
-  tomorrowLo.innerHTML = Math.ceil(tomorrow.temperatureLow);
-
-  //~ set day after tomorrow's Weather
-  const DAT = weatherData.daily.data[3];
-  dayAfterTomorrowDay.innerHTML = days[new Date(DAT.time * 1000).getDay()];
-  dayAfterTomorrowIcon.src = `./assets/images/icons/${assignIcon(
-    DAT.icon
-  )}.svg`;
-  dayAfterTomorrowHi.innerHTML = Math.ceil(DAT.temperatureHigh);
-  dayAfterTomorrowLo.innerHTML = Math.ceil(DAT.temperatureLow);
-
-  //~ set three days from today's Weather
-  const thirdOut = weatherData.daily.data[4];
-  threeDaysFromTodayDay.innerHTML =
-    days[new Date(thirdOut.time * 1000).getDay()];
-  threeDaysFromTodayIcon.src = `./assets/images/icons/${assignIcon(
-    thirdOut.icon
-  )}.svg`;
-  threeDaysFromTodayHi.innerHTML = Math.ceil(thirdOut.temperatureHigh);
-  threeDaysFromTodayLo.innerHTML = Math.ceil(thirdOut.temperatureLow);
+  setForecastDay(1, tomorrowDay, tomorrowWeatherIcon, tomorrowHi, tomorrowLo, "svg");
+  setForecastDay(2, dayAfterTomorrowDay, dayAfterTomorrowIcon, dayAfterTomorrowHi, dayAfterTomorrowLo, "svg");
+  setForecastDay(3, threeDaysFromTodayDay, threeDaysFromTodayIcon, threeDaysFromTodayHi, threeDaysFromTodayLo, "svg");
 }
 
 getWeather();
 populateDOM();
 
-const assignIcon = function (icon) {
-  // console.log(`%c${icon}`, "color: orange");
-  let iconSrc;
-  if (icon == "clear-day" || icon == "clear-night") {
-    iconSrc = "sun";
-  } else if (icon == "rain") {
-    iconSrc = "rain";
-  } else if (icon == "snow" || icon == "sleet") {
-    iconSrc = "snow";
-  } else if (icon == "wind") {
-    iconSrc = "wind";
-  } else if (icon == "fog") {
-    iconSrc = "foggy";
-  } else if (icon == "cloudy") {
-    iconSrc = "cloudy";
-  } else if (icon == "partly-cloudy-day" || icon == "partly-cloudy-night") {
-    iconSrc = "part-cloud";
-  }
-  // console.log(`%c${iconSrc}`, "color: yellow");
-  return iconSrc;
+//~ Map WMO weather codes to local icon filenames
+const wmoToIcon = function (code) {
+  if (code === 0) return "sun";
+  if (code <= 2) return "part-cloud";
+  if (code === 3) return "cloudy";
+  if (code <= 48) return "foggy";
+  if (code <= 67) return "rain";
+  if (code <= 77) return "snow";
+  if (code <= 82) return "rain";
+  if (code <= 86) return "snow";
+  return "rain"; // thunderstorms (95, 96, 99)
+};
+
+//~ Map WMO codes to human-readable summaries
+const wmoToSummary = function (code) {
+  if (code === 0) return "Clear";
+  if (code === 1) return "Mainly Clear";
+  if (code === 2) return "Partly Cloudy";
+  if (code === 3) return "Overcast";
+  if (code === 45 || code === 48) return "Foggy";
+  if (code >= 51 && code <= 55) return "Drizzle";
+  if (code >= 61 && code <= 65) return "Rain";
+  if (code >= 71 && code <= 77) return "Snow";
+  if (code >= 80 && code <= 82) return "Rain Showers";
+  if (code >= 85 && code <= 86) return "Snow Showers";
+  if (code >= 95) return "Thunderstorm";
+  return "Cloudy";
 };
